@@ -1,0 +1,33 @@
+<data>
+  <proxy>
+    <url>http://www.visualdataweb.org/relfinder/proxy.php</url>
+  </proxy>
+  <endpoints>
+    <endpoint>
+      <name>SMW Coopaxis</name>
+      <abbreviation>smw-coopaxis</abbreviation>
+      <description>Les relations du wiki sémantique de coopaxis</description>
+      <endpointURI>http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis</endpointURI>
+      <dontAppendSPARQL>true</dontAppendSPARQL>
+      <isVirtuoso>false</isVirtuoso>
+      <useProxy>true</useProxy>
+      <method>POST</method>
+      <autocompleteURIs>
+        <autocompleteURI>http://www.w3.org/2000/01/rdf-schema#label</autocompleteURI>
+        <autocompleteURI>http://schema.org/alternateName</autocompleteURI>
+      </autocompleteURIs>
+      <autocompleteLanguage>fr</autocompleteLanguage>
+      <ignoredProperties>
+        <ignoredProperty>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</ignoredProperty>
+        <ignoredProperty>http://www.openrdf.org/schema/sesame#directType</ignoredProperty>
+      </ignoredProperties>
+      <imageURIs>
+        <imageURI>http://xmlns.com/foaf/0.1/depiction</imageURI>
+      </imageURIs>
+      <linkURIs>
+        <linkURI>http://semantic-mediawiki.org/swivt/1.0#page</linkURI>
+      </linkURIs>
+      <maxRelationLength>2</maxRelationLength>
+    </endpoint>
+  </endpoints>
+</data>
