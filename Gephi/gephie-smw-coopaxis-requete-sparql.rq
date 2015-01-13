@@ -1,0 +1,36 @@
+PREFIX owl: 	<http://www.w3.org/2002/07/owl#>
+PREFIX swivt: 	<http://semantic-mediawiki.org/swivt/1.0#>
+PREFIX wiki: 	<http://smw.coopaxis.fr/id/>
+PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+construct {
+	?x ?r ?y
+}
+where {
+	?x ?r ?y
+	FILTER(
+		?y != swivt:Subject
+		&&
+		?y != owl:Class
+		&&
+		?y != owl:DatatypeProperty
+		&&
+		?y != owl:ObjectProperty
+		&&
+		?y != owl:Ontology
+		&&
+		?y != rdfs:isDefinedBy
+		&&
+		?r != swivt:wikiNamespace
+		&&
+		?r != swivt:wikiPageModificationDate
+		&&
+		?r != wiki:Attribut-3ADate_de_modification-23aux
+		&&
+		?r != swivt:specialProperty_ASK
+		&&
+		?r != swivt:wikiPageSortKey
+		&&
+		!isLiteral(?y)
+	)
+}
+limit 10000
