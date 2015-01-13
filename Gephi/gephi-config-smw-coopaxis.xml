@@ -15,41 +15,30 @@
 <entry key="semanticwebimport.ignore_blank_properties">false</entry>
 <entry key="PythonPre"/>
 <entry key="rdfResourceList">/fr/inria/edelweiss/examples/human_2007_09_11.rdf;/fr/inria/edelweiss/examples/human_2007_09_11.rdfs;/fr/inria/edelweiss/examples/human_2007_09_11.rul</entry>
-<entry key="SparqlRequest">PREFIX owl: 	&lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX swivt: 	&lt;http://semantic-mediawiki.org/swivt/1.0#&gt;
-PREFIX wiki: 	&lt;http://smw.coopaxis.fr/id/&gt;
-PREFIX rdfs: 	&lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-construct {
-	?x ?r ?y
+<entry key="SparqlRequest">PREFIX owl:   &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX swivt:   &lt;http://semantic-mediawiki.org/swivt/1.0#&gt;
+PREFIX wiki:  &lt;http://smw.coopaxis.fr/id/&gt;
+PREFIX rdfs:  &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+# import special GEPHI
+PREFIX gephi: &lt;http://gephi.org/&gt;
+CONSTRUCT{
+  ?s ?p ?o .
+  ?s gephi:label ?label .
 }
-where {
-	?x ?r ?y
-	FILTER(
-		?y != swivt:Subject
-		&amp;&amp;
-		?y != owl:Class
-		&amp;&amp;
-		?y != owl:DatatypeProperty
-		&amp;&amp;
-		?y != owl:ObjectProperty
-		&amp;&amp;
-		?y != owl:Ontology
-		&amp;&amp;
-		?y != rdfs:isDefinedBy
-		&amp;&amp;
-		?r != swivt:wikiNamespace
-		&amp;&amp;
-		?r != swivt:wikiPageModificationDate
-		&amp;&amp;
-		?r != wiki:Attribut-3ADate_de_modification-23aux
-		&amp;&amp;
-		?r != swivt:specialProperty_ASK
-		&amp;&amp;
-		?r != swivt:wikiPageSortKey
-		&amp;&amp;
-		!isLiteral(?y)
-	)
-}
-limit 10000</entry>
+WHERE {
+  ?s ?p ?o .
+  ?s rdfs:label ?label .
+  FILTER(
+    (
+    STRSTARTS(STR(?p), "http://schema.org/")
+    ||
+    STRSTARTS(STR(?p), "http://smw.coopaxis.fr/id/")
+    )
+    &amp;&amp;
+    ?p != wiki:Attribut-3ADate_de_modification-23aux
+    &amp;&amp;
+    !isLiteral(?o)
+  )
+}</entry>
 <entry key="semanticwebimport.fyn_level">0</entry>
 </properties>

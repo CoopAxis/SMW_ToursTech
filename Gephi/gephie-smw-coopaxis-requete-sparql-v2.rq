@@ -1,0 +1,23 @@
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX swivt:   <http://semantic-mediawiki.org/swivt/1.0#>
+PREFIX wiki:  <http://smw.coopaxis.fr/id/>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+# import special GEPHI
+PREFIX gephi: <http://gephi.org/>
+CONSTRUCT{
+  ?s ?p ?o .
+  ?s gephi:label ?label .
+}
+WHERE {
+  ?s ?p ?o .
+  ?s rdfs:label ?label .
+  FILTER(
+    (
+    STRSTARTS(STR(?p), "http://schema.org/")
+    ||
+    STRSTARTS(STR(?p), "http://smw.coopaxis.fr/id/")
+    )
+    &&
+    ?p != wiki:Attribut-3ADate_de_modification-23aux
+  )
+}
