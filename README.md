@@ -13,4 +13,5 @@ Pour visualiser les données du Wiki:
  * voir https://github.com/CoopAxis/SMW_ToursTech/tree/master/RelFinder
 * Gephi : https://gephi.github.io/
  * voir https://github.com/CoopAxis/SMW_ToursTech/tree/master/Gephi
-* openrdf-workbench (need login) : http://smw.coopaxis.fr/openrdf-workbench/repositories/smw-coopaxis
+* openrdf-workbench : http://rdf4j.org/
+ * voir (need login) http://smw.coopaxis.fr/openrdf-workbench/repositories/smw-coopaxis
