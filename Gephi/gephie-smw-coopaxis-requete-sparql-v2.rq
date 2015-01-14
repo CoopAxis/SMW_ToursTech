@@ -2,6 +2,7 @@ PREFIX owl:   <http://www.w3.org/2002/07/owl#>
 PREFIX swivt:   <http://semantic-mediawiki.org/swivt/1.0#>
 PREFIX wiki:  <http://smw.coopaxis.fr/id/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema:  <http://schema.org/>
 # import special GEPHI
 PREFIX gephi: <http://gephi.org/>
 CONSTRUCT{
@@ -19,5 +20,9 @@ WHERE {
     )
     &&
     ?p != wiki:Attribut-3ADate_de_modification-23aux
+    &&
+    ?p != schema:url
+    &&
+    !isLiteral(?o)
   )
 }
