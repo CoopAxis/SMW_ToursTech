@@ -27,7 +27,7 @@
       <linkURIs>
         <linkURI>http://semantic-mediawiki.org/swivt/1.0#page</linkURI>
       </linkURIs>
-      <maxRelationLength>2</maxRelationLength>
+      <maxRelationLength>4</maxRelationLength>
     </endpoint>
   </endpoints>
 </data>
