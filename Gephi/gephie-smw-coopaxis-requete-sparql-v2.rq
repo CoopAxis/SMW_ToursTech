@@ -8,10 +8,12 @@ PREFIX gephi: <http://gephi.org/>
 CONSTRUCT{
   ?s ?p ?o .
   ?s gephi:label ?label .
+  ?o gephi:label ?labelO .
 }
 WHERE {
-  ?s ?p ?o .
   ?s rdfs:label ?label .
+  ?s ?p ?o .
+  ?o ?aumoins ?untriplet .
   FILTER(
     (
     STRSTARTS(STR(?p), "http://schema.org/")
@@ -25,4 +27,7 @@ WHERE {
     &&
     !isLiteral(?o)
   )
+  OPTIONAL {
+    ?o rdfs:label ?labelO .
+  }
 }
