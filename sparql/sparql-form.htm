@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>    
+  <title>SPARQL Interface</title>
+  <link href="http://bootswatch.com/journal/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+</head>
+<body>
+<div class="container">
+
+<h1>Sparql <small>http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis</small></h1>
+
+<form id="form" method="GET">
+    <div class="query-wrapper">
+      <textarea id="query-field" name="query" style="margin: 2px; height: 325px; width: 840px;">
+PREFIX oracle: &lt;http://www.oracle.com/2009/05/orardf/jena-joseki-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX cdm: &lt;http://publications.europa.eu/ontology/cdm#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX cmr: &lt;http://publications.europa.eu/ontology/cdm/cmr#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX at: &lt;http://publications.europa.eu/ontology/authority/&gt;
+SELECT ?s ?p ?o
+WHERE {
+  ?s ?p ?o
+} LIMIT 10
+      </textarea>
+      <input type="hidden" name="output" value=""/>
+      <!--<input id="submit" type="submit" value="Submit Query"/>-->
+      <button id="btnSubmitQuery">Submit</button>
+    </div>
+  </form>
+
+</div>
+
+<script>  
+	$(document).ready(function () {
+
+	  var ENDPOINT="http://dbpedia.org/sparql";
+	  // var ENDPOINT="http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis";
+
+	  // handle a click on the search button
+  	  $('#btnSubmitQuery').click(function() {
+  		var sparql = $('#query-field').val();
+  		console.log(sparql);
+
+  		// on construit notre requete en demandant du JSON
+        var queryURL = ENDPOINT + "?" + "query="+escape(sparql) + "&format=json";
+
+        // on envoie la requete
+      $.ajax({
+          url:queryURL,
+          dataType: 'jsonp',
+          success:function(data) {
+            console.log(data);
+
+            var columns = data.head.vars;
+            var bindings = data.results.bindings;
+            for(var i=0;i<bindings.length; i++) {
+            	console.log("Line of result "+i+" : ");
+            	for(var j=0;j<columns.length; j++) {
+            		var c = columns[j];
+            		console.log(c+" : "+bindings[i][c].value);
+            	}
+            }
+          } // callback                
+      });
+
+
+  		return false;
+  	  });
+
+	});
+</script>
+
+</body>
+</html>
