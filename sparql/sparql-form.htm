@@ -14,15 +14,12 @@
 <form id="form" method="GET">
     <div class="query-wrapper">
       <textarea id="query-field" name="query" style="margin: 2px; height: 325px; width: 840px;">
-PREFIX oracle: &lt;http://www.oracle.com/2009/05/orardf/jena-joseki-ns#&gt;
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
 PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX cdm: &lt;http://publications.europa.eu/ontology/cdm#&gt;
 PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX cmr: &lt;http://publications.europa.eu/ontology/cdm/cmr#&gt;
 PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
-PREFIX at: &lt;http://publications.europa.eu/ontology/authority/&gt;
+PREFIX schema: &lt;http://schema.org/&gt;
 SELECT ?s ?p ?o
 WHERE {
   ?s ?p ?o
@@ -39,8 +36,9 @@ WHERE {
 <script>  
 	$(document).ready(function () {
 
-	  var ENDPOINT="http://dbpedia.org/sparql";
-	  // var ENDPOINT="http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis";
+	  // var ENDPOINT="http://dbpedia.org/sparql";
+	  var ENDPOINT="http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis";
+    // var ENDPOINT="http://smw.coopaxis.fr/sparql";
 
 	  // handle a click on the search button
   	  $('#btnSubmitQuery').click(function() {
@@ -53,6 +51,9 @@ WHERE {
         // on envoie la requete
       $.ajax({
           url:queryURL,
+          headers: {          
+            Accept : "application/sparql-results+json"  
+          },
           dataType: 'jsonp',
           success:function(data) {
             console.log(data);
