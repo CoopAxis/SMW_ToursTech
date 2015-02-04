@@ -1,0 +1,2290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2015-02-04">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="namespace" title="namespace" type="string"></attribute>
+      <attribute id="SparqlID" title="SparqlID" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="1" label="Culture Libre et Créations Collectives">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Culture_Libre_et_Cr-C3-A9ations_Collectives"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="44.36728" y="-47.456905" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="2" label="Cyrille Giquello">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Cyrille_Giquello"></attvalue>
+        </attvalues>
+        <viz:size value="1.0654701"></viz:size>
+        <viz:position x="60.811428" y="-31.57165" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="3" label="CoopAxis">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/CoopAxis"></attvalue>
+        </attvalues>
+        <viz:size value="2.2503963"></viz:size>
+        <viz:position x="67.459625" y="-78.89462" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="4" label="Artefacts">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Artefacts"></attvalue>
+        </attvalues>
+        <viz:size value="1.0327442"></viz:size>
+        <viz:position x="37.30656" y="-67.16379" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="5" label="Laure Vivier">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Laure_Vivier"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="26.133501" y="-83.69681" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="6" label="Pépinière d'entreprises Startinbox">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/P-C3-A9pini-C3-A8re_d-27entreprises_Startinbox"></attvalue>
+        </attvalues>
+        <viz:size value="1.2028627"></viz:size>
+        <viz:position x="119.622765" y="-99.18561" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="7" label="ETICs">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/ETICs"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="52.01146" y="-102.7995" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="8" label="Palo Altours">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Palo_Altours"></attvalue>
+        </attvalues>
+        <viz:size value="5.192981"></viz:size>
+        <viz:position x="143.66982" y="17.636345" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="9" label="Julien Dargaisse">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Julien_Dargaisse"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="180.12433" y="27.438559" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="10" label="Centre &amp; TIC">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Centre_-26_TIC"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-71.29798" y="15.902796" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="11" label="BuzzleMe">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/BuzzleMe"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="187.29015" y="29.606966" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="12" label="FunLab">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/FunLab"></attvalue>
+        </attvalues>
+        <viz:size value="1.0476197"></viz:size>
+        <viz:position x="137.96983" y="-40.724903" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="13" label="Webschool Tours">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Webschool_Tours"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="72.36452" y="-0.059134785" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="14" label="Interfaces">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Interfaces"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="146.64107" y="-145.2528" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="15" label="Pepinière d'entreprises Startère">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Pepini-C3-A8re_d-27entreprises_Start-C3-A8re"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="155.99892" y="-162.4516" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="16" label="Sparna">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Sparna"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="107.42636" y="-138.34378" z="0.0"></viz:position>
+      </node>
+      <node id="17" label="Thomas Francart">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Thomas_Francart"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="111.78" y="-156.63805" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="18" label="18mars">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/18mars"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="160.69257" y="-108.694885" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="19" label="Sébastien Mennetret">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/S-C3-A9bastien_Mennetret"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="164.71776" y="-95.337395" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="20" label="Sophie Charlat">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Sophie_Charlat"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="34.33573" y="61.114555" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="21" label="ESTEN">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/ESTEN"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="37.47263" y="46.374466" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="22" label="Audiency">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Audiency"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="173.19844" y="-58.127476" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="23" label="Julien Nédélec">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Julien_N-C3-A9d-C3-A9lec"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="190.04779" y="-65.8046" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="24" label="Beemotion">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Beemotion"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="134.3883" y="-116.00801" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="25" label="BTG Communication">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/BTG_Communication"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="129.79718" y="-120.19644" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="26" label="Cré-sol">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Cr-C3-A9-2Dsol"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="99.15812" y="-100.47541" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="27" label="Jean-David Rezaioff">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jean-2DDavid_Rezaioff"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="-83.37111" y="51.540447" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="28" label="My French Office">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/My_French_Office"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="-85.965" y="63.48107" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="29" label="Andra Rezaioff">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Andra_Rezaioff"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-89.080376" y="82.45287" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="30" label="Ackwa">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Ackwa"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="-23.54021" y="-25.783243" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="31" label="Gildas Noël">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Gildas_No-C3-ABl"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-40.55729" y="-15.625965" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="32" label="ADDICTIC">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/ADDICTIC"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="-142.74452" y="-58.093838" z="0.0"></viz:position>
+      </node>
+      <node id="33" label="Fabienne Grimault">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Fabienne_Grimault"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-153.94493" y="-68.344315" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="34" label="Matthieu Rossi">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Matthieu_Rossi"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-9.9053335" y="-97.06164" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="35" label="Itinéraire B">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Itin-C3-A9raire_B"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="2.1676457" y="-80.45117" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="36" label="Régis Chevrinais">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/R-C3-A9gis_Chevrinais"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-155.59132" y="-75.61722" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="37" label="Ambin Informatique">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Ambin_Informatique"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="-30.408726" y="-41.725403" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="38" label="Éric Emmanuelli">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/-C3-89ric_Emmanuelli"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-49.40214" y="-32.26656" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="39" label="Antoine Périgne">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Antoine_P-C3-A9rigne"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="36.30721" y="24.92675" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="40" label="Claire Gervais">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Claire_Gervais"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-131.21175" y="1.3848096" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="41" label="AOUKI">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/AOUKI"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-115.53646" y="6.050322" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="42" label="Olivier Souchon">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Olivier_Souchon"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-138.5159" y="-36.17948" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="43" label="Merkatic">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Merkatic"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-125.947975" y="-26.658607" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="44" label="CEFIM">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/CEFIM"></attvalue>
+        </attvalues>
+        <viz:size value="1.0207535"></viz:size>
+        <viz:position x="65.14909" y="-16.327108" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="45" label="MEDIASAT">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/MEDIASAT"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-54.07966" y="30.238115" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="46" label="Nicolas Maubois">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Nicolas_Maubois"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="239.53189" y="9.082455" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="47" label="WaterMarketing">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/WaterMarketing"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="222.20229" y="10.533032" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="48" label="Franck Gauttron">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Franck_Gauttron"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="70.790016" y="-57.3977" z="0.0"></viz:position>
+      </node>
+      <node id="49" label="Loïc Lequesne">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Lo-C3-AFc_Lequesne"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-103.25464" y="-11.9096365" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="50" label="Olivier Ragain">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Olivier_Ragain"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-73.673546" y="-6.3411336" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="51" label="ESOPE">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/ESOPE"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="10.822618" y="-13.637125" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="52" label="Tic&amp;Doc">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Tic-26Doc"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="20.5897" y="-0.4868102" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="53" label="Lérig Couprie">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/L-C3-A9rig_Couprie"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="34.65042" y="1.0502896" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="54" label="Gesec">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Gesec"></attvalue>
+        </attvalues>
+        <viz:size value="1.137846"></viz:size>
+        <viz:position x="-257.05777" y="-49.354538" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="55" label="Pauline Mispoulet">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Pauline_Mispoulet"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-274.82086" y="-42.87245" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="56" label="Yves Lagreze">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Yves_Lagreze"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-267.90997" y="-40.271133" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="57" label="Thierry Larcher">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Thierry_Larcher"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-277.62476" y="-49.959206" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="58" label="Pascal Texereau">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Pascal_Texereau"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-270.63196" y="-54.781467" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="59" label="Jean-Charles Charrier">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jean-2DCharles_Charrier"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-265.70294" y="-66.362625" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="60" label="François Delcambre">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Fran-C3-A7ois_Delcambre"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-276.99503" y="-57.272846" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="61" label="Didier Dumont">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Didier_Dumont"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-270.26553" y="-47.857533" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="62" label="Franck Pajot">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Franck_Pajot"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-265.67435" y="-59.588097" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="63" label="Philippe Risoul">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Philippe_Risoul"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-272.53262" y="-63.07999" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="64" label="Philippe Ottavy">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Philippe_Ottavy"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-258.8732" y="-63.506367" z="0.0"></viz:position>
+      </node>
+      <node id="65" label="François Raimbaud">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Fran-C3-A7ois_Raimbaud"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-156.81308" y="-17.990856" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="66" label="Graphikoo">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Graphikoo"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-141.01091" y="-11.727" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="67" label="IBU-Soft">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/IBU-2DSoft"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-106.90024" y="-43.995934" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="68" label="Ivan Buisson">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Ivan_Buisson"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-114.68376" y="-57.87013" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="69" label="Emmanuel Roc">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Emmanuel_Roc"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="40.953777" y="60.45439" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="70" label="InnoVAticE">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/InnoVAticE"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="10.5812435" y="-27.359512" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="71" label="Rémi Levy">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/R-C3-A9mi_Levy"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="40.969948" y="-10.979232" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="72" label="Gaël Mallet">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Ga-C3-ABl_Mallet"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-5.8489895" y="-101.29378" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="73" label="Mikii">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Mikii"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="-90.10842" y="116.08272" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="74" label="Thibaut Lamanthe">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Thibaut_Lamanthe"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-93.644424" y="130.73393" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="75" label="Johan Beneval">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Johan_Beneval"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-91.44984" y="137.9489" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="76" label="Mille &amp; une">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Mille_-26_une"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-66.56466" y="85.551094" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="77" label="Hervé Poudret">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Herv-C3-A9_Poudret"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-65.42759" y="101.20665" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="78" label="Néréide">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/N-C3-A9r-C3-A9ide"></attvalue>
+        </attvalues>
+        <viz:size value="1.0476197"></viz:size>
+        <viz:position x="-158.8882" y="147.63246" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="79" label="Olivier Heintz">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Olivier_Heintz"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-166.5642" y="157.54498" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="80" label="Nicolas Malin">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Nicolas_Malin"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-165.59686" y="167.1323" z="0.0"></viz:position>
+      </node>
+      <node id="81" label="Catherine Heintz">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Catherine_Heintz"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-159.65105" y="164.45157" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="82" label="Charles Steltzlen">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Charles_Steltzlen"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-174.62248" y="157.22717" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="83" label="Jean-Luc Malet">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jean-2DLuc_Malet"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-171.97076" y="164.18526" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="84" label="NetPresta">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/NetPresta"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-104.96832" y="80.7222" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="85" label="Philippe Bouquet">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Philippe_Bouquet"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-112.405876" y="95.24575" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="86" label="ParAgence.fr">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/ParAgence.fr"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="-152.91278" y="78.28643" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="87" label="Francois Gautard">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Francois_Gautard"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-164.89828" y="87.0576" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="88" label="Arnaud Viguié">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Arnaud_Vigui-C3-A9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-169.78748" y="92.20202" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="89" label="Polytech Tours">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Polytech_Tours"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-94.17684" y="20.473476" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="90" label="Shim Sham">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Shim_Sham"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-118.99886" y="64.30568" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="91" label="Cassia Sakarovitch">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Cassia_Sakarovitch"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-129.54413" y="75.67085" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="92" label="Stan Allain">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Stan_Allain"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-24.983833" y="497.02783" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="93" label="Jean Stanislas Allain">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jean_Stanislas_Allain"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-29.220642" y="496.84454" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="94" label="SUPINFO">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/SUPINFO"></attvalue>
+        </attvalues>
+        <viz:size value="1.0327442"></viz:size>
+        <viz:position x="43.141075" y="81.53664" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="95" label="Joseph Rousseau">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Joseph_Rousseau"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="45.086205" y="95.44933" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="96" label="Nathalie Berthonneau">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Nathalie_Berthonneau"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="40.80486" y="103.04406" z="0.0"></viz:position>
+      </node>
+      <node id="97" label="Elise Gestin">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Elise_Gestin"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="48.29909" y="103.254974" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="98" label="TGA Production">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/TGA_Production"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-139.91798" y="27.790369" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="99" label="Thierry Gautier">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Thierry_Gautier"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-155.87387" y="30.396002" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="100" label="Tours Métropole Numérique">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Tours_M-C3-A9tropole_Num-C3-A9rique"></attvalue>
+        </attvalues>
+        <viz:size value="1.0207535"></viz:size>
+        <viz:position x="-191.88991" y="45.079876" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="101" label="Rémi Carrière">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/R-C3-A9mi_Carri-C3-A8re"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-205.27507" y="48.144882" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="102" label="Jacques Beauvois">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jacques_Beauvois"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-210.28964" y="54.41227" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="103" label="Sophie Campourcy">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Sophie_Campourcy"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-212.60735" y="46.22548" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="104" label="TX2 Concept">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/TX2_Concept"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-63.80214" y="39.84489" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="105" label="Une Image à Part">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Une_Image_-C3-A0_Part"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-131.76848" y="45.364697" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="106" label="Sébastien Duveau">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/S-C3-A9bastien_Duveau"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-145.85603" y="51.96297" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="107" label="VERT.COM">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/VERT.COM"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="-145.12373" y="8.868829" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="108" label="Claude Foubert">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Claude_Foubert"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-161.86925" y="6.9516506" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="109" label="Web Computer Tours">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Web_Computer_Tours"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-90.75363" y="2.5592988" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="110" label="Mathieu Abassin">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Mathieu_Abassin"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-58.49677" y="36.220818" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="111" label="Vincent Barousse">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Vincent_Barousse"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-70.25905" y="39.61646" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="112" label="Rémi Carakos">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/R-C3-A9mi_Carakos"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-90.404945" y="30.746386" z="0.0"></viz:position>
+      </node>
+      <node id="113" label="Amandine Cauchy">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Amandine_Cauchy"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-18.113245" y="-33.275284" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="114" label="Vincent Chaigneau">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Vincent_Chaigneau"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-77.713104" y="37.672234" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="115" label="Marc Frèrebeau">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Marc_Fr-C3-A8rebeau"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="0.24677035" y="-39.38216" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="116" label="Patrice-Alain Gauron">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Patrice-2DAlain_Gauron"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-86.27396" y="-2.4511015" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="117" label="Étienne Guérard">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/-C3-89tienne_Gu-C3-A9rard"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-85.30284" y="34.79387" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="118" label="Daniel Herskovits">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Daniel_Herskovits"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-94.960335" y="26.460804" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="119" label="Philippe Lalanne">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Philippe_Lalanne"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-80.84476" y="-6.1684933" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="120" label="Agathe Peaudeau">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Agathe_Peaudeau"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-96.08867" y="14.635397" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="121" label="Emmanuel Thierry">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Emmanuel_Thierry"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-93.66717" y="8.539458" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="122" label="Clearnox">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Clearnox"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="158.75276" y="33.17461" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="123" label="Cédric Fouassier">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/C-C3-A9dric_Fouassier"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-142.97969" y="-409.2291" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="124" label="CS Tech">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/CS_Tech"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="-140.24554" y="-414.91348" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="125" label="Stéphane Badin">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/St-C3-A9phane_Badin"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-134.57994" y="-412.13614" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="126" label="EPHORI">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/EPHORI"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="221.87811" y="31.55235" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="127" label="Jean-Louis Jarry">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jean-2DLouis_Jarry"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="239.28485" y="34.699413" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="128" label="Gomès Brothers">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Gom-C3-A8s_Brothers"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="163.64505" y="-66.58867" z="0.0"></viz:position>
+      </node>
+      <node id="129" label="Jordan Gomès">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jordan_Gom-C3-A8s"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="178.13551" y="-77.1024" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="130" label="M@rb.net">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/M@rb.net"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="225.19972" y="84.31707" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="131" label="Denis Barbarossa">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Denis_Barbarossa"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="238.22127" y="93.01763" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="132" label="Nina Camatta">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Nina_Camatta"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="238.38916" y="100.365295" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="133" label="Nowly">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Nowly"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="188.62753" y="72.849335" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="134" label="Manyssin THIN">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Manyssin_THIN"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="198.84843" y="86.508316" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="135" label="Orange">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Orange"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="169.49641" y="10.782717" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="136" label="Soraya">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Soraya"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="213.16371" y="50.9609" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="137" label="Alexis-Franck Gandubert">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Alexis-2DFranck_Gandubert"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="228.69875" y="58.01258" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="138" label="SYNTONIS">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/SYNTONIS"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="167.64317" y="21.057314" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="139" label="Tierce Partie">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Tierce_Partie"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="170.27275" y="89.678696" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="140" label="Jean Leborgne">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jean_Leborgne"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="176.26653" y="105.567024" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="141" label="Tour(s)plus">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Tour(s)plus"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="109.61751" y="-33.345646" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="142" label="WYZE">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/WYZE"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="184.57614" y="-24.97925" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="143" label="Yohann Wypiorczyk">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Yohann_Wypiorczyk"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="201.82523" y="-30.079718" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="144" label="Utelias">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Utelias"></attvalue>
+        </attvalues>
+        <viz:size value="1.0115627"></viz:size>
+        <viz:position x="93.516174" y="-121.82881" z="0.0"></viz:position>
+      </node>
+      <node id="145" label="Fabien Vidal">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Fabien_Vidal"></attvalue>
+        </attvalues>
+        <viz:size value="1.0050908"></viz:size>
+        <viz:position x="84.26802" y="-125.6811" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="146" label="Tours Emploi Travail'Aid">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Tours_Emploi_Travail-27Aid"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="56.185688" y="-107.809265" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="147" label="Christophe Jollivet">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Christophe_Jollivet"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="147.04453" y="40.406742" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="148" label="Cyrille Charron">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Cyrille_Charron"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="163.63515" y="6.3401837" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="149" label="Dylan Lefaucheux">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Dylan_Lefaucheux"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="155.43709" y="44.774143" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="150" label="Hervé Decaux">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Herv-C3-A9_Decaux"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="146.3602" y="-17.647642" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="151" label="Jean-Lou Lebars">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Jean-2DLou_Lebars"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="103.80184" y="3.963686" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="152" label="Julien Lavergne">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Julien_Lavergne"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="131.61476" y="36.877575" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="153" label="Marie Gassie">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Marie_Gassie"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="176.30283" y="58.568108" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="154" label="Richard Renard">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Richard_Renard"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="153.3852" y="37.986687" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="155" label="Rodrigo Reyes">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Rodrigo_Reyes"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="140.13614" y="39.286747" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+      <node id="156" label="Sylvain Lézier">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Sylvain_L-C3-A9zier"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="165.36078" y="15.191732" z="0.0"></viz:position>
+        <viz:color r="204" g="0" b="0"></viz:color>
+      </node>
+      <node id="157" label="Valérie Leperlier-Roy">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Val-C3-A9rie_Leperlier-2DRoy"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="165.38193" y="33.662003" z="0.0"></viz:position>
+        <viz:color r="221" g="0" b="0"></viz:color>
+      </node>
+      <node id="158" label="Vincent Halie">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Vincent_Halie"></attvalue>
+        </attvalues>
+        <viz:size value="1.001261"></viz:size>
+        <viz:position x="153.18373" y="-18.452496" z="0.0"></viz:position>
+        <viz:color r="238" g="0" b="0"></viz:color>
+      </node>
+      <node id="159" label="ADBS Centre">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/ADBS_Centre"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="164.06642" y="26.701029" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="160" label="JUG Tours">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/JUG_Tours"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="148.8429" y="47.309437" z="0.0"></viz:position>
+      </node>
+      <node id="161" label="PolAU">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/PolAU"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="134.98499" y="43.344692" z="0.0"></viz:position>
+        <viz:color r="17" g="0" b="0"></viz:color>
+      </node>
+      <node id="162" label="Réseau Entreprendre Val de Loire">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/R-C3-A9seau_Entreprendre_Val_de_Loire"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="161.20108" y="40.260563" z="0.0"></viz:position>
+        <viz:color r="34" g="0" b="0"></viz:color>
+      </node>
+      <node id="163" label="Val de France Angels">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Val_de_France_Angels"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="141.75424" y="46.85518" z="0.0"></viz:position>
+        <viz:color r="51" g="0" b="0"></viz:color>
+      </node>
+      <node id="164" label="CBR Conseil">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/CBR_Conseil"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="74.49123" y="-101.975586" z="0.0"></viz:position>
+        <viz:color r="68" g="0" b="0"></viz:color>
+      </node>
+      <node id="165" label="Digital Human">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Digital_Human"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="62.938553" y="-109.857346" z="0.0"></viz:position>
+        <viz:color r="85" g="0" b="0"></viz:color>
+      </node>
+      <node id="166" label="Fonds AC">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Fonds_AC"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="52.060593" y="-96.10078" z="0.0"></viz:position>
+        <viz:color r="102" g="0" b="0"></viz:color>
+      </node>
+      <node id="167" label="ID 37">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/ID_37"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="77.95219" y="-96.31208" z="0.0"></viz:position>
+        <viz:color r="119" g="0" b="0"></viz:color>
+      </node>
+      <node id="168" label="Aktan">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Aktan"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="62.327477" y="-102.937996" z="0.0"></viz:position>
+        <viz:color r="136" g="0" b="0"></viz:color>
+      </node>
+      <node id="169" label="Neogia">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Neogia"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="58.788906" y="-97.72834" z="0.0"></viz:position>
+        <viz:color r="153" g="0" b="0"></viz:color>
+      </node>
+      <node id="170" label="Odyssée Création">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/Odyss-C3-A9e_Cr-C3-A9ation"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="68.13805" y="-98.80282" z="0.0"></viz:position>
+        <viz:color r="170" g="0" b="0"></viz:color>
+      </node>
+      <node id="171" label="Résoudre">
+        <attvalues>
+          <attvalue for="namespace" value="http://smw.coopaxis.fr/id"></attvalue>
+          <attvalue for="SparqlID" value="http://smw.coopaxis.fr/id/R-C3-A9soudre"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="69.38966" y="-106.68108" z="0.0"></viz:position>
+        <viz:color r="187" g="0" b="0"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="1" target="2" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="1" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="4" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="12" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="13" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="3" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="3" target="48" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="4" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="4" target="5" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="4" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="7" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="8" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="8" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="8" target="9" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="8" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="9" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="9" target="11" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="10" target="27" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="11" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="11" target="9" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="12" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="12" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="13" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="14" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="14" target="15" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="16" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="16" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="16" target="17" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="17" target="16" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="18" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="18" target="19" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="19" target="12" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="19" target="18" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="20" target="21" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="21" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="21" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="22" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="22" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="22" target="23" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="23" target="22" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="24" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="25" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="26" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="26" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="27" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="27" target="28" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="28" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="28" target="27" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="29" target="28" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="30" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="30" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="30" target="31" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="31" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="31" target="30" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="32" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="32" target="33" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="33" target="32" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="34" target="35" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="35" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="35" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="36" target="32" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="37" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="37" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="37" target="38" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="38" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="38" target="37" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="40" target="41" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="41" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="42" target="43" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="43" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="43" target="42" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="45" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="46" target="47" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="47" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="47" target="46" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="48" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="48" target="44" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="49" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="49" target="49" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="50" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="51" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="51" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="51" target="52" label="http://smw.coopaxis.fr/id/Attribut-3AIs_associated_in">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="52" target="53" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="53" target="13" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="53" target="51" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="54" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="55" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="56" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="57" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="58" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="59" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="60" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="61" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="62" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="63" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="64" target="54" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65" target="66" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="66" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="66" target="65" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="67" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="67" target="68" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68" target="67" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="69" target="21" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="70" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="70" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="71" target="13" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="71" target="70" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="72" target="35" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="73" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="73" target="74" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="74" target="73" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="75" target="73" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="76" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="76" target="77" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="77" target="76" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="78" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="78" target="79" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="79" target="78" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="80" target="78" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="81" target="78" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="82" target="78" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="83" target="78" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="84" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="84" target="85" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="85" target="84" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="86" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="86" target="87" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="87" target="86" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="88" target="86" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="89" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="90" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="90" target="91" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="91" target="90" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="92" target="93" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="93" target="92" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94" target="95" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="95" target="94" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="96" target="94" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="97" target="94" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="98" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="98" target="99" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="99" target="98" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="100" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="100" target="101" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="101" target="100" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="102" target="100" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="103" target="100" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="104" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="105" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="105" target="106" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="106" target="105" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="107" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="107" target="108" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="108" target="107" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="109" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="111" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="112" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="113" target="4" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="113" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="114" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="115" target="1" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="115" target="4" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="115" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="116" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="117" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="119" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="121" target="10" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="122" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="123" target="124" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="125" target="124" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="126" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="126" target="127" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127" target="126" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="128" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="128" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="128" target="129" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="129" target="128" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="130" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="130" target="131" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="131" target="130" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="132" target="130" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="133" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="133" target="134" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="134" target="133" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="136" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="136" target="137" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="137" target="136" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="138" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139" target="140" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="140" target="139" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="141" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="141" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="142" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="142" target="12" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="142" target="143" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="143" target="142" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="144" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="144" target="6" label="http://schema.org/location">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="144" target="145" label="http://schema.org/contactPoint">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="145" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="145" target="144" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="146" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="147" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="148" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="150" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="150" target="12" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="151" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="151" target="44" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="152" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="153" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="153" target="133" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="154" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="155" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="156" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="157" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="158" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="158" target="12" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="159" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="160" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="161" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163" target="8" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="164" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="165" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="166" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="167" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="168" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="169" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="170" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171" target="3" label="http://schema.org/memberOf">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
