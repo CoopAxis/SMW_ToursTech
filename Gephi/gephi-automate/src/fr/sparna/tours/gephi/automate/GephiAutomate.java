@@ -17,11 +17,18 @@ import org.gephi.graph.api.GraphModel;
 import org.gephi.graph.api.UndirectedGraph;
 import org.gephi.io.exporter.api.ExportController;
 import org.gephi.io.exporter.preview.PNGExporter;
+import org.gephi.io.exporter.spi.GraphExporter;
 import org.gephi.io.importer.api.ImportController;
 import org.gephi.layout.plugin.forceAtlas2.ForceAtlas2;
 import org.gephi.layout.plugin.forceAtlas2.ForceAtlas2Builder;
 import org.gephi.layout.plugin.labelAdjust.LabelAdjust;
 import org.gephi.layout.plugin.labelAdjust.LabelAdjustBuilder;
+import org.gephi.layout.plugin.scale.Expand;
+import org.gephi.layout.plugin.scale.ScaleLayout;
+import org.gephi.partition.api.Partition;
+import org.gephi.partition.api.PartitionController;
+import org.gephi.partition.plugin.EdgeColorTransformer;
+import org.gephi.partition.plugin.NodeColorTransformer;
 import org.gephi.preview.api.PreviewController;
 import org.gephi.preview.api.PreviewModel;
 import org.gephi.preview.api.PreviewProperty;
@@ -34,6 +41,7 @@ import org.gephi.ranking.api.Transformer;
 import org.gephi.ranking.plugin.transformer.AbstractColorTransformer;
 import org.gephi.ranking.plugin.transformer.AbstractSizeTransformer;
 import org.gephi.statistics.plugin.GraphDistance;
+import org.gephi.statistics.plugin.Modularity;
 import org.openide.util.Lookup;
 
 import fr.inria.edelweiss.semantic.importer.SemanticWebImportParser;
@@ -53,7 +61,7 @@ public class GephiAutomate {
 		this.sparqlPath = sparqlPath;
 	}
 
-	public void run(String outputFilePath) throws Exception {
+	public void run(String outputFilePath, String gexfFilePath) throws Exception {
 		//Init a project - and therefore a workspace
 		ProjectController pc = Lookup.getDefault().lookup(ProjectController.class);
 		pc.newProject();
@@ -66,6 +74,7 @@ public class GephiAutomate {
 		ImportController importController = Lookup.getDefault().lookup(ImportController.class);
 		FilterController filterController = Lookup.getDefault().lookup(FilterController.class);
 		RankingController rankingController = Lookup.getDefault().lookup(RankingController.class);
+		PartitionController partitionController = Lookup.getDefault().lookup(PartitionController.class);
 		 
 		//Import file       
 //		Container container;
@@ -151,6 +160,15 @@ public class GephiAutomate {
 		
 		System.out.println("End forceAtlas layout");
 		
+//		ScaleLayout scaleLayout = new ScaleLayout(new Expand(), 1.2d);
+//		scaleLayout.setGraphModel(graphModel);
+//		
+//		scaleLayout.initAlgo();		
+//		for (int i = 0; i < 10 && scaleLayout.canAlgo(); i++) {
+//			scaleLayout.goAlgo();
+//		}
+//		scaleLayout.endAlgo();
+//		System.out.println("End Scale layout");
 		
 		// @see https://github.com/gephi/gephi/issues/564
 //		Node[] nodes = graphModel.getGraph().getNodes().toArray();
@@ -189,7 +207,10 @@ public class GephiAutomate {
 		//Rank color by Degree
 		Ranking degreeRanking = rankingController.getModel().getRanking(Ranking.NODE_ELEMENT, Ranking.DEGREE_RANKING);
 		AbstractColorTransformer colorTransformer = (AbstractColorTransformer) rankingController.getModel().getTransformer(Ranking.NODE_ELEMENT, Transformer.RENDERABLE_COLOR);
+		// du beige au rouge :
 		colorTransformer.setColors(new Color[]{new Color(0xFEF0D9), new Color(0xB30000)});
+		// du bleu au rouge :
+		// colorTransformer.setColors(new Color[]{new Color(0x146BFF), new Color(0xB30000)});
 		rankingController.transform(degreeRanking,colorTransformer);
 		 
 		//Rank size by centrality
@@ -200,10 +221,31 @@ public class GephiAutomate {
 		sizeTransformer.setMaxSize(5);
 		rankingController.transform(centralityRanking,sizeTransformer);
 		 
+		// change edge color according to their type
+//		Partition p = partitionController.buildPartition(attributeModel.getEdgeTable().getColumn("Label"), graph);
+//		System.out.println(p.getPartsCount() + " edge partitions found");
+//		EdgeColorTransformer edgeColorTransformer = new EdgeColorTransformer();
+//		edgeColorTransformer.randomizeColors(p);
+//		partitionController.transform(p, edgeColorTransformer);
+//		
+		
+		// Run modularity algorithm - community detection
+//		Modularity modularity = new Modularity();
+//        modularity.execute(graphModel, attributeModel);
+//        // Change node and edge color according to modularity
+//        AttributeColumn modColumn = attributeModel.getNodeTable().getColumn(Modularity.MODULARITY_CLASS);
+//        Partition p2 = partitionController.buildPartition(modColumn, graph);
+//        System.out.println(p2.getPartsCount() + " modularity partitions found");
+//        NodeColorTransformer nodeColorTransformer2 = new NodeColorTransformer();
+//        nodeColorTransformer2.randomizeColors(p2);
+//        partitionController.transform(p2, nodeColorTransformer2);
+
+		
+		
 		//Preview
 		model.getProperties().putValue(PreviewProperty.SHOW_NODE_LABELS, Boolean.TRUE);
 		model.getProperties().putValue(PreviewProperty.EDGE_CURVED, Boolean.FALSE);
-		model.getProperties().putValue(PreviewProperty.EDGE_COLOR, new EdgeColor(Color.GRAY));
+		// model.getProperties().putValue(PreviewProperty.EDGE_COLOR, new EdgeColor(Color.GRAY));
 		model.getProperties().putValue(PreviewProperty.EDGE_THICKNESS, new Float(0.3f));
 		model.getProperties().putValue(PreviewProperty.NODE_BORDER_WIDTH, new Float(0.2f));
 		model.getProperties().putValue(PreviewProperty.NODE_LABEL_FONT, model.getProperties().getFontValue(PreviewProperty.NODE_LABEL_FONT).deriveFont(8));
@@ -216,7 +258,19 @@ public class GephiAutomate {
 	    exporter.setWidth(3072);
 	    // ByteArrayOutputStream baos = new ByteArrayOutputStream();
 	    ec.exportFile(new File(outputFilePath), exporter);
+	    
+	    // export gefx
+	    if(gexfFilePath != null && !gexfFilePath.equals("")) {
+	    	// get GEXF Exporter
+	    	GraphExporter gexfExporter = (GraphExporter) ec.getExporter("gexf");
+	    	// Only exports the visible (filtered) graph
+	    	gexfExporter.setExportVisible(true);
+	    	exporter.setWorkspace(workspace);
+	    	ec.exportFile(new File(gexfFilePath), exporter);
+	    }
 	}
+	
+	
 	
 	private static String getDefaultCharSet() {
     	OutputStreamWriter writer = new OutputStreamWriter(new ByteArrayOutputStream());
@@ -224,9 +278,22 @@ public class GephiAutomate {
     	return enc;
     }
 	
+	/**
+	 * args[0] : SPARQL endpoint
+	 * args[1] : Path to SPARQL query file
+	 * args[2] : PNG output file
+	 * args[3] : (optional) : path to gexf output file
+	 * 
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String...args) throws Exception {
 		GephiAutomate automate = new GephiAutomate(args[0], args[1]);
-		automate.run(args[2]);
+		if(args.length > 3) {
+			automate.run(args[2], args[3]);
+		} else {
+			automate.run(args[2], null);
+		}
 	}
 	
 }
