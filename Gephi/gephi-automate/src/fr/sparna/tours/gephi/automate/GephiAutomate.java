@@ -261,6 +261,7 @@ public class GephiAutomate {
 	    
 	    // export gefx
 	    if(gexfFilePath != null && !gexfFilePath.equals("")) {
+	    	System.out.println("Exporting GEXF in "+gexfFilePath);
 	    	// get GEXF Exporter
 	    	GraphExporter gexfExporter = (GraphExporter) ec.getExporter("gexf");
 	    	// Only exports the visible (filtered) graph
