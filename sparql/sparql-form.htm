@@ -2,14 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>    
   <title>SPARQL Interface</title>
-  <link href="http://bootswatch.com/journal/bootstrap.min.css" rel="stylesheet">
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
 
-<h1>Sparql <small>http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis</small></h1>
+<h1>Sparql <small id="sparqlEndPoint">http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis</small></h1>
 
 <form id="form" method="GET">
     <div class="query-wrapper">
@@ -25,56 +23,73 @@ WHERE {
   ?s ?p ?o
 } LIMIT 10
       </textarea>
-      <input type="hidden" name="output" value=""/>
-      <!--<input id="submit" type="submit" value="Submit Query"/>-->
+      <br/>
       <button id="btnSubmitQuery">Submit</button>
     </div>
   </form>
 
 </div>
 
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
 <script>  
-	$(document).ready(function () {
 
-	  // var ENDPOINT="http://dbpedia.org/sparql";
-	  var ENDPOINT="http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis";
-    // var ENDPOINT="http://smw.coopaxis.fr/sparql";
+$(document).ready(function () {
 
-	  // handle a click on the search button
-  	  $('#btnSubmitQuery').click(function() {
-  		var sparql = $('#query-field').val();
-  		console.log(sparql);
+	// var ENDPOINT="http://dbpedia.org/sparql";
+	// var ENDPOINT="http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis";
+	var ENDPOINT="http://smw.coopaxis.fr/sparql";
 
-  		// on construit notre requete en demandant du JSON
-        var queryURL = ENDPOINT + "?" + "query="+escape(sparql) + "&format=json";
+	$('#sparqlEndPoint').html(ENDPOINT);
 
-        // on envoie la requete
-      $.ajax({
-          url:queryURL,
-          headers: {          
-            Accept : "application/sparql-results+json"  
-          },
-          dataType: 'jsonp',
-          success:function(data) {
-            console.log(data);
+	// handle a click on the search button
+	$('#btnSubmitQuery').click(function() {
 
-            var columns = data.head.vars;
-            var bindings = data.results.bindings;
-            for(var i=0;i<bindings.length; i++) {
-            	console.log("Line of result "+i+" : ");
-            	for(var j=0;j<columns.length; j++) {
-            		var c = columns[j];
-            		console.log(c+" : "+bindings[i][c].value);
-            	}
-            }
-          } // callback                
-      });
+		// La requête SparQL
+		var sparql = $('#query-field').val();
 
+		if( console!=undefined )
+			console.log(sparql);
 
-  		return false;
-  	  });
+		// Construction de l'URL pour la requête
+		var queryURL = ENDPOINT + '?query=' + escape(sparql) ;
 
-	});
+		// on envoie la requête au serveur
+		$.ajax({
+			url:queryURL,
+			headers: {
+				Accept : 'application/sparql-results+json'
+			},
+			dataType: 'json',
+			crossDomain: true ,
+			/**
+			 * Success callback
+			 */
+			success:function(data) {
+
+				if( console!=undefined )
+					console.log(data);
+
+				var columns = data.head.vars;
+				var bindings = data.results.bindings;
+				for(var i=0;i<bindings.length; i++) {
+					if( console!=undefined )
+						console.log("Line of result "+i+" : ");
+					for(var j=0;j<columns.length; j++) {
+						var c = columns[j];
+						if( console!=undefined )
+							console.log(c+" : "+bindings[i][c].value);
+					}
+				}
+			} // end success()
+		});
+
+		return false;
+
+	}); // end btnSubmitQuery.click()
+
+}); // end document.ready()
+
 </script>
 
 </body>
