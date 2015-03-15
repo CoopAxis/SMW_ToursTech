@@ -1,0 +1,397 @@
+{% extends "layout.html" %}
+
+{% block title %}ImportOE2T{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>ImportOE2T</h1>
+
+	<ul class="import list-group">
+	{% set rowsCounter = 0 %}
+	{% for row in importRows %}
+		{% set SIRET = row[importHeaders['SIRET']] %}
+		{% set rowsCounter = rowsCounter + 1 %}
+		
+		<li id="import_{{ SIRET }}" class="list-group-item panel well">
+
+			line n°{{ rowsCounter }}
+			<button type="button" class="btn btn-default" onclick="onclickSearch('{{ SIRET|e }}')">Search</button>
+
+			<form class="form-horizontal">
+				
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}PageName">Nom de la page</label>
+				<div class="col-sm-7">
+					<input class="form-control" type="text" id="{{ SIRET }}PageName" placeholder="Nom de la page">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}PageName').val('')">clear</button>
+			  </div>
+			  
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Nom">Nom (Raison sociale)</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}Nom" placeholder="Nom (Raison sociale)" value="{{ row[importHeaders['Raison sociale']]|e }}">
+					<div class="help-block ">
+						<span class="searchResult searchResult_Nom label"></span>
+					</div>
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}Nom').val('')">clear</button>
+			  </div>
+			  
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}AutreNom">Autre nom</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}AutreNom" placeholder="Autre nom" value="{{ row[importHeaders['Enseigne']]|e }}">
+					<div class="help-block ">
+						<span class="searchResult searchResult_AutreNom label"></span>
+					</div>
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}AutreNom').val('')">clear</button>
+			  </div>
+			  
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Type">Type</label>
+				<div class="col-sm-4">
+					<input type="text" readonly="readonly" class="form-control" id="{{ SIRET }}Type" placeholder="Type" value="entreprise">
+				</div>
+			  </div>
+			  
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Statut">Statut</label>
+				<div class="col-sm-4">
+					<input type="text" readonly="readonly" class="form-control" id="{{ SIRET }}Statut" placeholder="Statut inconnu" value="">
+				</div>
+			  </div>
+			  
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}SIREN">SIREN/SIRET</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="{{ SIRET }}SIREN" placeholder="SIREN ou SIRET" value="{{ SIRET }}">
+					<div class="help-block ">
+						<span class="searchResult searchResult_SIREN label"></span>
+					</div>
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}SIREN').val('')">clear</button>
+			  </div>
+			  
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}APE">APE</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="{{ SIRET }}APE" placeholder="APE / NAF" value="{{ row[importHeaders['Code APE']]|e }}">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}APE').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Adresse">Adresse</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}Adresse" placeholder="Adresse" value="{{ row[importHeaders['ADR']]|e }}">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}Adresse').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}nbEmployes">Effectif</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="{{ SIRET }}nbEmployes" placeholder="Effectif" value="{{ row[importHeaders['Nombre de salariés']]|e }}">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}nbEmployes').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Contact">Contact Point</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}Contact" placeholder="Contact" value="{{ row[importHeaders['Nom du responsable de l\'Ets']]|e }}">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}Contact').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}OrganisationParente">Organisation parente</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}OrganisationParente" placeholder="Organisation parente" value="{{ row[importHeaders['Groupe majoritaire']]|e }}">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}OrganisationParente').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Email">Email</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}Email" placeholder="Email" value="{{ row[importHeaders['Email']]|e }}">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}Email').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Web">Web</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}Web" placeholder="Web" value="{{ row[importHeaders['Site internet']]|e }}">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}Web').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Facebook">Facebook</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="{{ SIRET }}Facebook" placeholder="Facebook">
+				</div>
+				<button type="button" onclick="$('#{{ SIRET }}Facebook').val('')">clear</button>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Text">Texte</label>
+				<div class="col-sm-7">
+					<textarea class="form-control" id="{{ SIRET }}Text" placeholder="Texte libre" >
+{% if row[importHeaders['Activité']] %}
+Activité : {{ row[importHeaders['Activité']]|e }}
+{% endif %}
+
+{% if row[importHeaders['Savoir-faire']] %}
+Savoir-faire : {{ row[importHeaders['Savoir-faire']]|e }}
+{% endif %}
+
+{% if row[importHeaders['Filières Savoir-Faire']] %}
+Filières Savoir-Faire : {{ row[importHeaders['Filières Savoir-Faire']]|e }}
+{% endif %}
+
+{% if row[importHeaders['Certification']] %}
+Certification : {{ row[importHeaders['Certification']]|e }}
+{% endif %}
+
+					</textarea>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="control-label col-sm-3" for="{{ SIRET }}Source">Source</label>
+				<div class="col-sm-4">
+					<input type="text" readonly="readonly" class="form-control" id="{{ SIRET }}Source" placeholder="Source" value="OE2T">
+				</div>
+			  </div>
+
+				<button type="button" class="btn btn-default" onclick="onclickCreateWikiPage('{{ SIRET|e }}')">Create Page</button>
+			</form>
+
+		</li>
+	{% endfor %}
+	</ul>
+
+<script type="text/javascript">
+
+	var wikiUrl = 'http://smw.coopaxis.fr' ;
+	var wikiCreatePageSummary = 'Import from the OE2T digital corporates file' ;
+	var wgScriptPath = wikiUrl ;
+
+</script>
+<script type="text/javascript" src="Mediawiki.js"></script>
+
+<!--script type="text/javascript" src="mediaWiki_stuff.js"></script -->
+
+<script type="text/javascript">
+{% verbatim %}
+
+	/**
+	 * Initialisation de la page
+	 */
+	$(function() {
+
+		// Wikimedia Login
+		WikiLogin();
+	});
+	
+	function WikiLogin()
+	{
+		Mediawiki.logout();
+		var r = Mediawiki.login('CyrilleBot', 'MadnemBot',
+			/**
+			 * loginCallback Success
+			 */
+			function (data)
+			{
+				console.log('loginCallbackSuccess');
+				//console.log(data);
+				Mediawiki.updateStatus('Login sucessfull !', false);
+			},
+			/**
+			 * loginCallback Error
+			 */
+			function (data)
+			{
+				console.log('loginCallbackError');
+				//console.log(data);
+				Mediawiki.updateStatus('Login failed !', true);
+
+			}
+		);
+
+		if( r == null )
+		{
+			Mediawiki.updateStatus('You are already logged in as "'+Mediawiki.UserName+'"', false);
+		}
+	}
+
+	function onclickSearch( sirenOrSiret )
+	{
+		// Extract SIREN from SIRET
+		siren = sirenOrSiret.substring(0,9);
+
+		var orgDomItem = $('li#import_'+sirenOrSiret)
+		if( orgDomItem.length == 0 )
+		{
+			Mediawiki.updateStatus('Invalid argument for onclickSearch ! "'+sirenOrSiret+'"', true);
+			return ;
+		}
+		
+		var srDom, search ;
+
+		srDom = $('.searchResult_SIREN', orgDomItem );
+		search = 'SIREN='+ siren +'*' ;
+		searchAndDisplayResult( 'text', search, srDom );
+
+		srDom = $('.searchResult_AutreNom', orgDomItem );
+		search = $('#'+sirenOrSiret+'AutreNom', orgDomItem).val();
+		searchAndDisplayResult( 'title', search, srDom );
+		searchAndDisplayResult( 'text', search, srDom );
+
+		srDom = $('.searchResult_Nom', orgDomItem );
+		search = $('#'+sirenOrSiret+'Nom', orgDomItem).val();
+		searchAndDisplayResult( 'title', search, srDom );
+		searchAndDisplayResult( 'text', search, srDom );
+	}
+
+	function searchAndDisplayResult( where, search, srDom )
+	{
+		var searchingText = 'Searching ...' ;
+
+		srDom.removeClass('label-danger')
+			.removeClass('label-warning')
+			.removeClass('label-success')
+			.addClass("label-default")
+			.html(searchingText);
+
+		Mediawiki.search( where, search,
+			/**
+			 * searchAndDisplayResult success
+			 */
+			function( data )
+			{
+				//console.log('searchBySirenSuccess');
+				//console.log(data);
+
+				var pages = [] ;
+
+				var rText = srDom.html() ;
+				if( rText.indexOf(searchingText) >= 0 )
+				{
+					rText = '' ;
+				}
+
+				srDom.removeClass("label-default");
+				switch( data.query.search.length )
+				{
+				case 0 :
+					srDom.addClass("label-danger");
+					rText += 'By "'+where+'" : not found<br/>';
+					break;
+					
+				case 1 :
+					var t = data.query.search[0].title;
+					srDom.addClass("label-success");
+					rText += 'By "'+where+'" : found in page <a href="'+wikiUrl+'/'+t+'" target="_blank">'+t+'</a> <br/>' ;
+					if( where == 'title' )
+						pages.push(t);
+					break;
+					
+				default :
+					//console.log( siren +" suggestions");
+					var str = '' ;
+					data.query.search.forEach( function(dqs){
+						if( str!='' )
+							str+=', ';
+						str += '<a href="'+wikiUrl+'/'+dqs.title+'" target="_blank">'+dqs.title+'</a>' ;
+						if( where == 'title' )
+							pages.push(dqs.title);
+					});
+					srDom.addClass("label-warning");
+					rText += 'By "'+where+'" : found in pages: '+ str + '<br/>';
+					break;
+				}
+
+				srDom.html(rText);
+			},
+			/**
+			 * searchAndDisplayResult error
+			 */
+			function( data )
+			{
+				Mediawiki.updateStatus('Search by SIREN failed !', true);
+				//console.log(data);
+			}
+		);
+
+	}
+
+	function onclickCreateWikiPage( sirenOrSiret )
+	{
+		var orgDomItem = $('li#import_'+sirenOrSiret)
+		if( orgDomItem.length == 0 )
+		{
+			Mediawiki.updateStatus('Invalid argument for onclickSearch ! "'+sirenOrSiret+'"', true);
+			return ;
+		}
+		
+		var pageName = $('#'+sirenOrSiret+'PageName', orgDomItem).val();
+		if( pageName==undefined || pageName.trim() == '' )
+		{
+			Mediawiki.updateStatus('Page Name is empty !', true);
+			return ;
+		}
+
+		var pageText = '{{Organisation'+"\n";
+		pageText+= '|Nom='+$('#'+sirenOrSiret+'Nom', orgDomItem).val()+"\n" ;
+		pageText+= '|Autre nom='+$('#'+sirenOrSiret+'AutreNom', orgDomItem).val()+"\n" ;
+		pageText+= '|Type='+$('#'+sirenOrSiret+'Type', orgDomItem).val()+"\n" ;
+		pageText+= '|Statut='+$('#'+sirenOrSiret+'Statut', orgDomItem).val()+"\n" ;
+		pageText+= '|SIREN='+$('#'+sirenOrSiret+'SIREN', orgDomItem).val()+"\n" ;
+		pageText+= '|codeAPE='+$('#'+sirenOrSiret+'APE', orgDomItem).val()+"\n" ;
+		pageText+= '|Adresse='+$('#'+sirenOrSiret+'Adresse', orgDomItem).val()+"\n" ;
+		pageText+= '|nbEmployes='+$('#'+sirenOrSiret+'nbEmployes', orgDomItem).val()+"\n" ;
+		pageText+= '|OrganisationParente='+$('#'+sirenOrSiret+'OrganisationParente', orgDomItem).val()+"\n" ;
+		pageText+= '|Contact='+$('#'+sirenOrSiret+'Contact', orgDomItem).val()+"\n" ;
+		pageText+= '|Email='+$('#'+sirenOrSiret+'Email', orgDomItem).val()+"\n" ;
+		pageText+= '|Web='+$('#'+sirenOrSiret+'Web', orgDomItem).val()+"\n" ;
+		pageText+= '|Source='+$('#'+sirenOrSiret+'Source', orgDomItem).val()+"\n" ;
+		pageText+= '}}'+"\n" ;
+		pageText+= "\n" ;
+		pageText+= $('#'+sirenOrSiret+'Text', orgDomItem).val()+"\n" ;
+
+		article = {
+			title: pageName,
+			text: pageText,
+			summary: wikiCreatePageSummary,
+			createonly: true,
+			watch: true
+		};
+
+		Mediawiki.editArticle( article,
+			/**
+			 * editArticle Success
+			 */
+			function(data){
+				console.log('My editArticle Success');
+				console.log(data);
+				Mediawiki.updateStatus('Create page "'+pageName+'" success !', false);
+			},
+			/**
+			 * editArticle Error
+			 */
+			function(data){
+				console.log('My editArticle Error');
+				console.log(data);
+				if( data.error )
+					Mediawiki.updateStatus('Create page "'+pageName+'" failed ! Error "'+data.error.code+'" : '+data.error.info, true);
+				else
+					Mediawiki.updateStatus('Create page "'+pageName+'" failed ! Unknow error', true);
+			}
+		);
+
+	}
+
+{% endverbatim %}
+</script>
+
+{% endblock %}
