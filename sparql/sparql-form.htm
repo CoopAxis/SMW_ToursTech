@@ -8,6 +8,9 @@
 	.table-hover > tbody > tr:hover {
 		background-color: #d9edf7;
 	}
+	body.cursorProgress *, body.cursorProgress {
+		cursor: progress !important;
+	}
 </style>
 </head>
 <body>
@@ -39,6 +42,8 @@ WHERE {
 
 </div>
 
+<div id="resultInfo"></div>
+
 <div class="table-responsive">
 	<table id="results" class="table table-striped table-hover table-bordered table-condensed">
 		<thead></thead>
@@ -61,6 +66,8 @@ $(document).ready(function () {
 	// handle a click on the search button
 	$('#btnSubmitQuery').click(function() {
 
+		$('body').addClass('cursorProgress');
+
 		// La requête SparQL
 		var sparql = $('#query-field').val();
 
@@ -77,17 +84,19 @@ $(document).ready(function () {
 				Accept : 'application/sparql-results+json'
 			},
 			dataType: 'json',
-			crossDomain: true ,
+			crossDomain: true , // CORS compatibility
 			/**
 			 * Success callback
 			 */
-			success:function(data) {
+			success: function(data) {
 
-				if( console!=undefined )
-					console.log(data);
+				//if( console!=undefined )
+				//	console.log(data);
 
 				var columns = data.head.vars;
 				var bindings = data.results.bindings;
+
+				$('#resultInfo').html('<p><span class="label label-info">Found '+bindings.length+' rows</span></p>');
 
 				fillResultTable( columns, bindings );
 
@@ -104,8 +113,17 @@ $(document).ready(function () {
 					}
 				}
 				*/
+				$('body').removeClass('cursorProgress');
 
-			} // end success()
+			}, // end success()
+			error: function(data) {
+
+				$('body').removeClass('cursorProgress');
+				if( console!=undefined )
+					console.log(data);
+				$('#resultInfo').html('<p><span class="label label-danger">Error ! Look at the console for details</span></p>');
+
+			} // end error()
 		});
 
 		return false;
@@ -142,7 +160,7 @@ $(document).ready(function () {
 			$('tbody', table).append(html);
 		}
 
-	}
+	} // end fillResultTable()
 
 }); // end document.ready()
 
