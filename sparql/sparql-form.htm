@@ -1,33 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>    
-  <title>SPARQL Interface</title>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<title>SPARQL Interface</title>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	.table-hover > tbody > tr:hover {
+		background-color: #d9edf7;
+	}
+</style>
 </head>
 <body>
 <div class="container">
 
 <h1>Sparql <small id="sparqlEndPoint">http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis</small></h1>
 
-<form id="form" method="GET">
-    <div class="query-wrapper">
-      <textarea id="query-field" name="query" style="margin: 2px; height: 325px; width: 840px;">
+<form id="form">
+	<div class="query-wrapper">
+		<textarea id="query-field" name="query" style="margin: 2px; height: 325px; width: 840px;">
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
 PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
 PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
 PREFIX schema: &lt;http://schema.org/&gt;
+PREFIX swivt:   &lt;http://semantic-mediawiki.org/swivt/1.0#&gt;
+PREFIX wiki:  &lt;http://smw.coopaxis.fr/id/&gt;
+
 SELECT ?s ?p ?o
 WHERE {
   ?s ?p ?o
 } LIMIT 10
-      </textarea>
-      <br/>
-      <button id="btnSubmitQuery">Submit</button>
-    </div>
-  </form>
+		</textarea>
+		<br/>
+		<button id="btnSubmitQuery">Query</button>
+	</div>
+</form>
 
+</div>
+
+<div class="table-responsive">
+	<table id="results" class="table table-striped table-hover table-bordered table-condensed">
+		<thead></thead>
+		<tbody></tbody>
+	</table>
 </div>
 
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -48,8 +64,8 @@ $(document).ready(function () {
 		// La requête SparQL
 		var sparql = $('#query-field').val();
 
-		if( console!=undefined )
-			console.log(sparql);
+		//if( console!=undefined )
+		//	console.log(sparql);
 
 		// Construction de l'URL pour la requête
 		var queryURL = ENDPOINT + '?query=' + escape(sparql) ;
@@ -72,6 +88,12 @@ $(document).ready(function () {
 
 				var columns = data.head.vars;
 				var bindings = data.results.bindings;
+
+				fillResultTable( columns, bindings );
+
+				/* debug
+				if( console!=undefined )
+					console.log('Dump results : ');
 				for(var i=0;i<bindings.length; i++) {
 					if( console!=undefined )
 						console.log("Line of result "+i+" : ");
@@ -81,12 +103,46 @@ $(document).ready(function () {
 							console.log(c+" : "+bindings[i][c].value);
 					}
 				}
+				*/
+
 			} // end success()
 		});
 
 		return false;
 
 	}); // end btnSubmitQuery.click()
+
+	function fillResultTable( columns, bindings )
+	{
+		var table = $('#results');
+
+		$('thead tr', table).remove();
+		$('tbody tr', table).remove();
+
+		var html = '' ;
+		html+='<tr>';
+		html+='<th>#</th>';
+		for( var c in columns )
+		{
+			html+='<th>'+columns[c]+'</th>';
+		}
+		html+='</tr>';
+		$('thead', table).append(html);
+		var counter = 0 ;
+		for( var r in bindings )
+		{
+			html = '' ;
+			html+='<tr>';
+			html+='<th>'+ ++counter +'</th>';
+			for( var c in columns )
+			{
+				html+='<td>'+bindings[r][columns[c]].value+'</td>';
+			}
+			html+='</tr>';
+			$('tbody', table).append(html);
+		}
+
+	}
 
 }); // end document.ready()
 
