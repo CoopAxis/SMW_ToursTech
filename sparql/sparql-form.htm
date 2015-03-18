@@ -19,9 +19,26 @@
 <body>
 <div class="container">
 
-<h1>Sparql <small id="sparqlEndPoint"></small></h1>
+<h1>Sparql form</h1>
 
-<form id="form">
+<form id="form" class="form-horizontal">
+
+	<div class="form-group">
+
+		<div class="dropdown control-label col-sm-2">
+			<button id="dropdownEndpoints" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+				Sparql endpoints
+				<span class="caret"></span>
+			</button>
+			<ul id="endpointsList" class="dropdown-menu" role="menu" aria-labelledby="dropdownEndpoints"></ul>
+		</div>
+
+		<div class="col-sm-7">
+		<input id="sparqlEndPoint"  class="form-control" type="text" placeholder="SparQL endpoint"/>
+		</div>
+	</div>
+
+
 	<div class="query-wrapper">
 		<textarea id="query-field" name="query" style="margin: 2px; height: 325px; width: 840px;">
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
@@ -56,19 +73,22 @@ WHERE {
 
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
-<script>  
+<script>
 
-$(document).ready(function () {
+var endpoints = [
+	{label: 'SMW SparQL', url: 'http://smw.coopaxis.fr/sparql'},
+	{label: 'SMW SparQL schema', url: 'http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis-rdfs'},
+	{label: 'DBPedia', url: 'http://dbpedia.org/sparql'}
+];
 
-	// var ENDPOINT="http://dbpedia.org/sparql";
-	// var ENDPOINT="http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis";
-	var ENDPOINT="http://smw.coopaxis.fr/sparql";
-
-	$('#sparqlEndPoint').html(ENDPOINT);
+$(document).ready(function ()
+{
+	// fill endpoints list
+	fillEndpointsList( '#endpointsList' );
 
 	// handle a click on the search button
-	$('#btnSubmitQuery').click(function() {
-
+	$('#btnSubmitQuery').click(function()
+	{
 		$('body').addClass('cursorProgress');
 
 		// La requête SparQL
@@ -77,8 +97,10 @@ $(document).ready(function () {
 		//if( console!=undefined )
 		//	console.log(sparql);
 
+		var endpoint = $('#sparqlEndPoint').val();
+
 		// Construction de l'URL pour la requête
-		var queryURL = ENDPOINT + '?query=' + escape(sparql) ;
+		var queryURL = endpoint + '?query=' + escape(sparql) ;
 
 		// on envoie la requête au serveur
 		$.ajax({
@@ -168,6 +190,23 @@ $(document).ready(function () {
 		}
 
 	} // end fillResultTable()
+
+	function fillEndpointsList( epDomUlId )
+	{
+		var epDomUl = $(epDomUlId);
+		for( ep in endpoints )
+		{
+			epDomUl.append(
+				'<li role="presentation" data-url="'+endpoints[ep].url+'">'
+				+'<a role="menuitem" tabindex="-1" href="#">' + endpoints[ep].label + '</a>'
+				+'</li>'
+			);
+		}
+		$('li', epDomUl).click( function() {
+			$('#sparqlEndPoint').val( $(this).data('url') );
+		});
+		$('#sparqlEndPoint').val( $('li', epDomUl).first().data('url') );
+	}
 
 }); // end document.ready()
 
