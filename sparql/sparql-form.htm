@@ -6,7 +6,7 @@
 
 	<title>SPARQL Interface</title>
 
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 	<style>
 	.table-hover > tbody > tr:hover {
 		background-color: #d9edf7;
@@ -19,7 +19,7 @@
 <body>
 <div class="container">
 
-<h1>Sparql <small id="sparqlEndPoint">http://smw.coopaxis.fr/openrdf-sesame/repositories/smw-coopaxis</small></h1>
+<h1>Sparql <small id="sparqlEndPoint"></small></h1>
 
 <form id="form">
 	<div class="query-wrapper">
@@ -54,8 +54,8 @@ WHERE {
 	</table>
 </div>
 
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
 <script>  
 
 $(document).ready(function () {
@@ -157,7 +157,11 @@ $(document).ready(function () {
 			html+='<th>'+ ++counter +'</th>';
 			for( var c in columns )
 			{
-				html+='<td>'+bindings[r][columns[c]].value+'</td>';
+				if(bindings[r][columns[c]] != null) {
+					html+='<td>'+bindings[r][columns[c]].value+'</td>';
+				} else {
+					html+='<td>&nbsp;</td>';
+				}
 			}
 			html+='</tr>';
 			$('tbody', table).append(html);
