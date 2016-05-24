@@ -15,3 +15,5 @@ Pour visualiser les données du Wiki:
  * voir https://github.com/CoopAxis/SMW_ToursTech/tree/master/Gephi
 * openrdf-workbench : http://rdf4j.org/
  * voir (need login) http://smw.coopaxis.fr/openrdf-workbench/repositories/smw-coopaxis
+
+Site sur le projet : http://graph.coopaxis.fr/
